@@ -8,4 +8,9 @@ guard 'minitest' do
   watch(%r|^test/(.*)\/(.*)\.rb|)
   watch(%r|^lib/(.*)([^/]+)\.rb|)     { |m| "test/#{m[1]}test_#{m[2]}.rb" }
   watch(%r|^test/test_helper\.rb|)    { "test" }
+
+  # with DCI stuff
+  watch(%r|^app/roles/(.*)\.rb|)     { |m| "test/roles/#{m[1]}_test.rb" }
+  watch(%r|^app/models/(.*)\.rb|)    { |m| "test/models/#{m[1]}_test.rb" }
+  watch(%r|^app/contexts/(.*)\.rb|)    { |m| "test/contexts/#{m[1]}_test.rb" }
 end
