@@ -15,3 +15,5 @@ group :test do
 end
 
 gem 'mongoid-ancestry'
+
+gem "rolify"
