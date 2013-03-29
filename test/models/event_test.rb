@@ -12,12 +12,12 @@ describe Event do
     subject.must_respond_to :name
   end 
 
-  it 'has a start (date) time' do
-    subject.must_respond_to :start_time
+  it 'has a start date/time time' do
+    subject.must_respond_to :start_at
   end 
 
   it 'has a finish date/time' do
-    subject.must_respond_to :finish_time
+    subject.must_respond_to :finish_at
   end
   
   it 'may has many child events' do

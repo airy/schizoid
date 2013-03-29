@@ -12,8 +12,8 @@ class Event
   field     :name
   field     :description
   
-  field     :start_time,  type: DateTime
-  field     :finish_time, type: DateTime 
+  field     :start_at,  type: DateTime
+  field     :finish_at, type: DateTime 
   
   validates :name,      presence: true
 
