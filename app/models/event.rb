@@ -2,7 +2,6 @@ require "mongoid"
 require "mongoid-ancestry"
 
 class Event
-  resourcify
 
   include Mongoid::Document
   include Mongoid::Timestamps
