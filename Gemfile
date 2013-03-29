@@ -15,3 +15,5 @@ group :test do
 end
 
 gem 'schizo'
+gem 'mongoid'
+gem 'mongoid-ancestry'
